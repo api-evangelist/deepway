@@ -1,19 +1,56 @@
 aid: deepway
-name: deepway
-description: deepway is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: DeepWay 深向
+description: >-
+  DeepWay (深向科技 / Shenxiang Technology) is a Chinese intelligent new-energy
+  heavy-truck company, backed by Baidu and Qiming Venture Partners, that designs
+  and manufactures electric autonomous freight trucks it calls RoboTrucks. Its
+  vehicle line includes the Xingchen II (深向星辰 II) and Xingtu (深向星途) electric
+  heavy trucks paired with the Tianji (天玑) driver-assistance and autonomous
+  driving stack, an AI-based fleet management platform, and a vehicle-owner
+  mobile app. DeepWay reports 7,500+ activated L2 vehicles, a 30%+ subscription
+  rate, and 300M+ km of assisted-driving operation, and follows a roadmap from
+  L2 assistance (2023) to L4 platooning (2025) to single-vehicle L4 autonomy
+  (2028). Its business model progresses from vehicle sales to subscription
+  services to large-scale autonomous logistics capacity. As of this enrichment
+  pass DeepWay publishes no public developer API, SDK, documentation portal, or
+  machine-readable specification — this profile captures company identity and a
+  domain-security probe only.
 url: https://raw.githubusercontent.com/api-evangelist/deepway/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - qiming
+- baidu
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-no-public-api: true
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.deepway.com/favicon.ico
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Automotive
+- Autonomous Vehicles
+- Electric Vehicles
+- Trucking
+- Logistics
+- Fleet Management
+- Autonomous Driving
+- New Energy
+- Robotics
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +58,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/deepway-domain-security.yml
 - type: Website
-  url: https://deepway.com
+  url: https://www.deepway.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
